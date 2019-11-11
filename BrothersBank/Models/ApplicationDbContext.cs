@@ -10,6 +10,8 @@ namespace BrothersBank.Models
         public DbSet<AccountType> AccountTypes { get; set; }
         public DbSet<AccountTypeFamily> AccountTypeFamilies { get; set; }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<TransactionType> TransactionTypes { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
 
         public ApplicationDbContext()
