@@ -185,13 +185,20 @@
     <Compile Include="Migrations\201911110141015_CreateCustomerTable.Designer.cs">
       <DependentUpon>201911110141015_CreateCustomerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911110343306_CreateAccountTableAndSupportTables.cs" />
+    <Compile Include="Migrations\201911110343306_CreateAccountTableAndSupportTables.Designer.cs">
+      <DependentUpon>201911110343306_CreateAccountTableAndSupportTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountType.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\AccountTypeFamily.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -277,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911110141015_CreateCustomerTable.resx">
       <DependentUpon>201911110141015_CreateCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911110343306_CreateAccountTableAndSupportTables.resx">
+      <DependentUpon>201911110343306_CreateAccountTableAndSupportTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

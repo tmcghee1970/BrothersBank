@@ -7,6 +7,10 @@ namespace BrothersBank.Models
     {
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<AccountType> AccountTypes { get; set; }
+        public DbSet<AccountTypeFamily> AccountTypeFamilies { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
